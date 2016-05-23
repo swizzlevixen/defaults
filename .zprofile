@@ -1,4 +1,4 @@
-PS1=$'\e[0;36m%n@%m %~\e[0m 💾  '  # Custom Prompt settings
+PS1=$'\e[0;36m%n@%m\e[0m \e[0;33m%~\e[0m 💾  '  # Custom Prompt settings
 
 alias ll="ls -lahL"
 alias con="tail -40 -f /var/log/system.log"
