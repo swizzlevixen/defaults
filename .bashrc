@@ -47,3 +47,11 @@ export CLICOLOR=1
 export XCODE="`xcode-select --print-path`"
 export PATH="/Users/mboszko/bin:$XCODE/Tools:$PATH\
 :/opt/local/bin:/opt/local/sbin"
+
+# The Omni Group warning, since they like to use ZSH,
+# and if a sysadmin comes to work on my Mac, they will know
+WHITE='\033[1;37m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+ON_RED='\e[101m'
+printf "${RED}This Terminal is running${NC} ${WHITE}${ON_RED} BASH ${NC}\n"
