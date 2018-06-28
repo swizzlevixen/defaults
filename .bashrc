@@ -14,7 +14,7 @@ alias dev="cd ~/dev/"
 alias showhiddenfiles="defaults write com.apple.finder AppleShowAllFiles YES" # requires Finder relaunch
 alias hidehiddenfiles="defaults write com.apple.finder AppleShowAllFiles NO" # requires Finder relaunch
 
-# Example exported environment variable
+# Environment variables
 # export SOME_SECRET_PASSWORD="password123!"
 
 # Python Virtual Environments
@@ -40,4 +40,8 @@ export EDITOR="bbedit"
 
 # Color in the shell
 export CLICOLOR=1
+
+# Xcode stuff
 export XCODE="`xcode-select --print-path`"
+export PATH="/Users/mboszko/bin:$XCODE/Tools:$PATH\
+:/opt/local/bin:/opt/local/sbin"
