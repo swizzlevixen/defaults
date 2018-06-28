@@ -20,4 +20,6 @@ Stuff that I use a lot when I set up a new computer, or start a new project.
 
 ## Python
 
-- Python [`termcolor`](https://pypi.org/project/termcolor/)
+- [Download the latest Python](https://www.python.org/downloads/mac-osx/) and install
+- Use [`virtualenv`](https://pypi.org/project/virtualenv/) and [`virtualenvwrapper`](https://pypi.org/project/virtualenvwrapper/) for **every project**
+- Python [`termcolor`](https://pypi.org/project/termcolor/) for printing colors to the terminal.
