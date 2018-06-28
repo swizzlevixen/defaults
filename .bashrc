@@ -18,9 +18,11 @@ alias hidehiddenfiles="defaults write com.apple.finder AppleShowAllFiles NO" # r
 # export SOME_SECRET_PASSWORD="password123!"
 
 # Python Virtual Environments
-# - Install virtualenv and virtualenvwrapper
+# - install virtualenv and virtualenvwrapper
+export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
 
 # Better list details and colors
 alias ll="ls -lahL"
