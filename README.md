@@ -4,6 +4,12 @@ Stuff that I use a lot when I set up a new computer, or start a new project.
 
 ## bash
 
+[.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
+
+- `.bash_profile` is executed for login shells
+- `.bashrc` is executed for interactive non-login shells.
+- load `.bashrc` into `.bash_profile` and put most of your customizations in `.bashrc`
+
 ### Adding to $PATH
 
     PATH=$PATH:~/opt/bin  # New path at end
