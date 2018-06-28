@@ -1,3 +1,5 @@
 # Python packages I use often
 
+virtualenv
+virtualenvwrapper
 termcolor  # color text output to the terminal: https://pypi.org/project/termcolor/
