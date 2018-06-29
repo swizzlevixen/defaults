@@ -35,6 +35,9 @@ Work in progress. See [my last list from 2010][2010apps] in the meantime, but be
 ## Fonts
 
 - [DejaVu Sans Mono][dejavu] as a wider-glyph replacement for [Panic Sans][coda]. I set the editor font for both BBEdit and PyCharm to this.
+    - [A copy of the DejaVu fonts][dejavufonts] are included in this repository under [their free license][dejavulicense].
 
 [dejavu]: https://dejavu-fonts.github.io
 [coda]: https://www.panic.com/coda/
+[dejavufonts]: https://github.com/bobtiki/defaults/blob/master/fonts/dejavu-fonts-ttf-2.37.tar.bz2
+[dejavulicense]: https://dejavu-fonts.github.io/License.html
