@@ -2,6 +2,10 @@
 
 Stuff that I use a lot when I set up a new computer, or start a new project.
 
+## Software
+
+See the [Mac Essentials](https://github.com/bobtiki/defaults/blob/master/mac_essentials.md) document.
+
 ## bash
 
 [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
