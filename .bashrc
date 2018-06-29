@@ -42,22 +42,16 @@ bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
 # Python and Virtual Environment defaults
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PYTHONVER=3.7
 export PYTHON=python${PYTHONVER}
-export PROJECT_HOME="$HOME/dev"
-export WORKON_HOME="$HOME/.virtualenvs"
-export VIRTUALENVWRAPPER_TMPDIR="$WORKON_HOME/tmp"
+export PATH="/Library/Frameworks/Python.framework/Versions/${PYTHONVER}/bin:${PATH}"
+export PROJECT_HOME="${HOME}/dev"
+export WORKON_HOME="${HOME}/.virtualenvs"
+export VIRTUALENVWRAPPER_TMPDIR="${WORKON_HOME}/tmp"
 export VIRTUALENVWRAPPER_PYTHON=`which python3`
-source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
+source "/Library/Frameworks/Python.framework/Versions/${PYTHONVER}/bin/virtualenvwrapper.sh"
+export PIP_VIRTUALENV_BASE="${WORKON_HOME}"
 export PIP_RESPECT_VIRTUALENV=true
-# Python Virtual Environments - second set of instructions
-# - install virtualenv and virtualenvwrapper
-# export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
-# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-# export WORKON_HOME=$HOME/.virtualenvs
-# source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
 
 # Xcode stuff
 # export XCODE="`xcode-select --print-path`"
