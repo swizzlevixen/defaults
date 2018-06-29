@@ -20,6 +20,16 @@ Stuff that I use a lot when I set up a new computer, or start a new project.
 
 ## Python
 
-- [Download the latest Python](https://www.python.org/downloads/mac-osx/) and install
+### Venv installation and setup
+
+- [Download the latest Python](https://www.python.org/downloads/mac-osx/) (3.7.0, as of this writing) and install
+- run `Update Shell Profile.command` and `Install Certificates.command`
 - Use [`virtualenv`](https://pypi.org/project/virtualenv/) and [`virtualenvwrapper`](https://pypi.org/project/virtualenvwrapper/) for **every project**
+- `sudo -H pip3 install --upgrade virtualenv`
+- `sudo -H pip3 install --upgrade virtualenvwrapper`
+- Make sure that the `.bashrc` is updated with my default Python settings
+- `cd ~/dev` and `mkproject PROJECT_NAME_HERE` to start a new venv and project
+
+### Other Python stuff
+
 - Python [`termcolor`](https://pypi.org/project/termcolor/) for printing colors to the terminal.
