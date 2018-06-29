@@ -27,7 +27,7 @@ Stuff that I use a lot when I set up a new computer, or start a new project.
 - Use [`virtualenv`](https://pypi.org/project/virtualenv/) and [`virtualenvwrapper`](https://pypi.org/project/virtualenvwrapper/) for **every project**
 - `sudo -H pip3 install --upgrade virtualenv`
 - `sudo -H pip3 install --upgrade virtualenvwrapper`
-- Make sure that the `.bashrc` is updated with my default Python settings
+- Make sure that the `.bashrc` is updated with my [default Python settings](https://github.com/bobtiki/defaults/blob/master/.bashrc)
 - `cd ~/dev` and `mkproject PROJECT_NAME_HERE` to start a new venv and project
 
 ### Other Python stuff
