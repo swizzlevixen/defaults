@@ -41,3 +41,7 @@ Work in progress. See [my last list from 2010][2010apps] in the meantime, but be
 [coda]: https://www.panic.com/coda/
 [dejavufonts]: https://github.com/bobtiki/defaults/blob/master/fonts/dejavu-fonts-ttf-2.37.tar.bz2
 [dejavulicense]: https://dejavu-fonts.github.io/License.html
+
+## VPN
+
+Secure communications, especially when using public WiFi. I use [ProtonVPN](https://account.protonvpn.com/downloads).
