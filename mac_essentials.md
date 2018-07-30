@@ -12,12 +12,14 @@ Work in progress. See [my last list from 2010][2010apps] in the meantime, but be
 
 - [1Password][], which has become indispensable for not only password management, but for managing all sorts of sensitive information. In my experience, syncs flawlessly with a shared database file via Dropbox, iCloud, or their own service. They've recently switched to a subscription model, but it's only $2.99/mo ($36/yr) vs. their old price of $40 for the app. There's also [1Password iOS][].
 - [Tweetbot][] for Twitter.
-- [TypeIt4Me][] for text replacement and snippets.
+- [Keyboard Maestro][] — Incredibly powerful app for text replacement, snippets, keyboard shortcuts to launch scripts, you name it.
+- [Itsycal][] - Menu bar calendar that can show just a tiny date, or display the date/time in the format of your choice. When clicked, shows this month, plus any calendars’ items.
 
 [1Password]: https://geo.itunes.apple.com/us/app/1password-7/id1333542190?mt=12&at=10lmSY
 [1Password iOS]: https://itunes.apple.com/us/app/1password/id568903335?mt=8&at=10lmSY
 [Tweetbot]: https://geo.itunes.apple.com/us/app/tweetbot-3-for-twitter/id1384080005?mt=12&at=10lmSY
-[TypeIt4Me]: https://www.ettoresoftware.com/mac-apps/typeit4me/
+[Keyboard Maestro]: https://www.keyboardmaestro.com/
+[Itsycal]: https://www.mowglii.com/itsycal/datetime.html
 
 ### Programming
 
