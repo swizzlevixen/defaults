@@ -6,12 +6,26 @@
 
 First, install the transcoding tools:
 
-- Update Ruby: `brew install ruby`
-- Install [video-transcode](https://github.com/donmelton/video_transcoding): `sudo gem install video_transcoding`
-- Download and install [Node.js](https://nodejs.org/en/)
-- Install [batch-video-transcode](https://github.com/nwronski/batch-transcode-video):
-    - `gem install video_transcoding`
-    - `npm i batch-transcode-video -g`
+- Update Ruby
+- Install Video Transcoding dependencies
+- Install [Video Transcoding](https://github.com/donmelton/video_transcoding)
+- Install [batch-transcode-video](https://github.com/nwronski/batch-transcode-video)
+
+```
+brew install ruby          # Update Ruby
+brew install handbrake
+brew install ffmpeg
+brew install mkvtoolnix
+brew install mp4v2
+brew install mpv
+sudo gem install video_transcoding
+```
+
+Download and install [Node.js](https://nodejs.org/en/), then `batch-transcode-video`:
+
+```
+npm i batch-transcode-video -g
+```
 
 ### Bash scripts
 
