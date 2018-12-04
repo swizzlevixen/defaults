@@ -29,7 +29,12 @@ npm i batch-transcode-video -g
 
 ### Bash scripts
 
-Included in this directory are two `bash` scripts, `plexit` and `batch-plexit`. I recommend putting these in `usr/local/bin/` and running `chmod +x [script]` on each.
+Included in this directory are two `bash` scripts, `plexit` and `batch-plexit`. I recommend putting these in `/usr/local/bin/` and running `chmod +x [script]` on each. Alternatively, symlink the file in this repo to `/usr/local/bin/` so that you can update the repo and it will stay in sync.
+
+```
+ln -s /path/to/defaults/video-transcode/plexit /usr/local/bin
+ln -s /path/to/defaults/video-transcode/batch-plexit /usr/local/bin
+```
 
 ## Plexit
 
