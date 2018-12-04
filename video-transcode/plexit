@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+## TODO: Add some sort of output directory option.
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Help text
+usage="
+$(basename "$0") [-h] [-i PATH -c t:b:l:r] -- starts transcode-video with Mark's preferred Plex settings
+
+where:
+    -h | --help   show this help text
+    -i | --input  path to the input video file
+    -c | --crop   crop setting in pixels - TOP:BOTTOM:LEFT:RIGHT
+"
+
+echo "========================="
+printf "${YELLOW}PLEXIT START${NC}\n"
+echo "========================="
+
+# Default: no crop
+crop="0:0:0:0"
+
+## Check for command line arguments
+while :
+do
+    case "$1" in
+      -h | --help)
+          echo "$usage"
+          exit 0
+          ;;
+      -i | --input)
+          if [ $# -ne 0 ]; then
+            filepath="$2"   # You may want to check validity of $2
+          fi
+          shift 2
+          ;;
+      -c | --crop)
+          crop="$2"
+           shift 2
+           ;;
+      --) # End of all options
+          shift
+          break
+          ;;
+      -*)
+          printf "${RED}Error: Unknown option: $1${NC}\n=========================\n" >&2
+          echo "$usage"
+          exit 1
+          ;;
+      *)  # No more options
+          break
+          ;;
+    esac
+done
+
+## Make sure that the input file and crop are specified.
+
+if [ -z ${filepath+x} ]; then
+    printf "${RED}Input file is not specified.${NC}\n"
+    echo "========================="
+    echo "$usage"
+    exit
+fi
+
+if [ ${crop} == "0:0:0:0" ]; then
+    printf "${YELLOW}Defaulting to no crop.${NC}\n"
+    echo "========================="
+fi
+
+## send to transcode-video
+
+printf "${GREEN}SENDING TO TRANSCODE${NC}\n"
+echo "========================="
+
+# My preferred Plex settings with Detelecine/Deinterlace
+transcode-video --crop $crop --add-audio all --add-subtitle all --force-subtitle scan --handbrake-option detelecine --handbrake-option comb-detect --handbrake-option decomb $filepath
+
+## Done
+echo "========================="
+printf "${YELLOW}PLEXIT FINISHED${NC}\n"
+echo "========================="
+exit 0
