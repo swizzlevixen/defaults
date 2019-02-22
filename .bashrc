@@ -52,6 +52,8 @@ export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source "/Library/Frameworks/Python.framework/Versions/${PYTHONVER}/bin/virtualenvwrapper.sh"
 export PIP_VIRTUALENV_BASE="${WORKON_HOME}"
 export PIP_RESPECT_VIRTUALENV=true
+# Because I can never remember the 'deactivate' command
+alias workoff="deactivate"
 
 # Xcode stuff
 # export XCODE="`xcode-select --print-path`"
