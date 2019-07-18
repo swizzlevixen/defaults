@@ -6,6 +6,15 @@ Stuff that I use a lot when I set up a new computer, or start a new project.
 
 See the [Mac Essentials](https://github.com/bobtiki/defaults/blob/master/mac_essentials.md) document.
 
+## zsh
+
+Moving to `zsh` on all Macs from here forward, since macOS is moving to it as [the default in Catalina](https://support.apple.com/en-us/HT208050), and Omni prefers it anyway. I learned a lot from [this Scripting OS X article on moving to zsh](https://scriptingosx.com/2019/06/moving-to-zsh/).
+
+- `zshrc` goes in `/etc/`, and is executed for all users
+- `.zshrc` goes in `~/`, and is for the current user only.
+
+Might want to look at [oh-my-zsh](https://ohmyz.sh/) later, as their git plugin looks very nice, and there's lots of other plugins and themes.
+
 ## bash
 
 [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
