@@ -15,6 +15,10 @@ Moving to `zsh` on all Macs from here forward, since macOS is moving to it as [t
 
 Might want to look at [oh-my-zsh](https://ohmyz.sh/) later, as their git plugin looks very nice, and there's lots of other plugins and themes.
 
+## fish
+
+[Jay Tamboli](https://twitter.com/jtaqmboli) recommended [`fish`](https://fishshell.com/) instead of `zsh`, and I acctually like it a lot. There's a theme for [`oh-my-fish`](https://github.com/oh-my-fish/oh-my-fish) that they use in their web-based demo, called [`bobthefish`](https://github.com/oh-my-fish/theme-bobthefish), and it's really nice with git integration. It uses functions for everything, including aliases, so it will take a little work to move over all of my defaults, but I'm interested in setting that up at some point.
+
 ## bash
 
 [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
