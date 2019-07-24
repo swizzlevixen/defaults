@@ -8,6 +8,8 @@ See the [Mac Essentials](https://github.com/bobtiki/defaults/blob/master/mac_ess
 
 ## zsh
 
+![customized zsh screenshot](media/zsh.png "customized zsh screenshot")
+
 Moving to `zsh` on all Macs from here forward, since macOS is moving to it as [the default in Catalina](https://support.apple.com/en-us/HT208050), and Omni prefers it anyway. I learned a lot from [this Scripting OS X article on moving to zsh](https://scriptingosx.com/2019/06/moving-to-zsh/).
 
 - `zshrc` goes in `/etc/`, and is executed for all users
