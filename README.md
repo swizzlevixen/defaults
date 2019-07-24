@@ -23,6 +23,8 @@ I am now using [oh-my-zsh](https://ohmyz.sh/), as their git plugin is very nice,
 brew cask install iterm2
 ```
 
+I have my colors set to "Tango Dark". I have saved my iTerms profile `mboszko` here in the `.iterm` folder. Copy this folder to `~/.iterm` and set iTerm2 > Preferences > General > [√] Load prefererences from a custom folder or URL: ~/.iterm
+
 #### Oh-my-zsh
 
 ```sh
