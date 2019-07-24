@@ -13,13 +13,47 @@ Moving to `zsh` on all Macs from here forward, since macOS is moving to it as [t
 - `zshrc` goes in `/etc/`, and is executed for all users
 - `.zshrc` goes in `~/`, and is for the current user only.
 
-Might want to look at [oh-my-zsh](https://ohmyz.sh/) later, as their git plugin looks very nice, and there's lots of other plugins and themes.
+I am now using [oh-my-zsh](https://ohmyz.sh/), as their git plugin is very nice, and I *love* the Powerlevel10k theme.
 
-## fish
+### Install these bits
 
-[Jay Tamboli](https://twitter.com/jtaqmboli) recommended [`fish`](https://fishshell.com/) instead of `zsh`, and I acctually like it a lot. There's a theme for [`oh-my-fish`](https://github.com/oh-my-fish/oh-my-fish) that they use in their web-based demo, called [`bobthefish`](https://github.com/oh-my-fish/theme-bobthefish), and it's really nice with git integration. It uses functions for everything, including aliases, so it will take a little work to move over all of my defaults, but I'm interested in setting that up at some point.
+#### iTerm2
 
-## bash
+```sh
+brew cask install iterm2
+```
+
+#### Oh-my-zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### [Powerlevel10k and patched font](https://gist.github.com/kevin-smets/8568070)
+
+```
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+- Download the [SourceCodePro+Powerline+Awesome+Regular](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf) font and install.
+
+#### [Enable auto-suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+#### Enable word jumps and word deletion, aka natural text selection
+
+By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing → Boom! Head explodes"
+
+#### Syntax Highlighting
+
+```
+brew install zsh-syntax-highlighting
+```
+
+## bash [deprecated]
 
 [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
 
