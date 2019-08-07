@@ -1,3 +1,6 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mboszko/.oh-my-zsh"
 
@@ -9,6 +12,11 @@ export ZSH="/Users/mboszko/.oh-my-zsh"
 DEFAULT_USER=$(whoami)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="awesome-patched"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_DIR_SHOW_WRITABLE=true
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -58,7 +66,7 @@ POWERLEVEL9K_MODE="awesome-patched"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -83,6 +91,8 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="bbedit ~/.zshrc"
 alias ohmyzsh="bbedit ~/.oh-my-zsh"
 
+export PATH="/users/mboszko/Applications:${PATH}"
+
 # Python and Virtual Environment defaults
 export PYTHONVER=3.7
 export PYTHON=python${PYTHONVER}
@@ -96,6 +106,7 @@ export PIP_VIRTUALENV_BASE="${WORKON_HOME}"
 export PIP_RESPECT_VIRTUALENV=true
 # Because I can never remember the 'deactivate' command
 alias workoff="deactivate"
+alias python=$PYTHON
 
 # Xcode stuff
 export XCODE="`xcode-select --print-path`"
@@ -118,8 +129,24 @@ PATH="${HOME}/Omni Checkouts/mark/dripbot:${PATH}"
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+# Omni Group work aliases
+alias tos-deliverables-folder-init="mkdir elements photos elements/rough"
+
+# Media shortcuts
+alias yt-dl="youtube-dl --write-description --write-thumbnail --format mp4 --all-subs --embed-subs --add-metadata"
+alias yt-audio="youtube-dl -x --audio-format m4a --embed-thumbnail"
+alias yt-poster="youtube-dl --write-all-thumbnails --skip-download"
+alias pshop="open -a 'Adobe Photoshop CC 2019'"
+
+# Make a directory and immediately change into it
+function mkdircd () { mkdir -p "$@" && cd "$@"; }
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Syntax highlighting
+# Syntax highlighting (should be close to last)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# iTerm integration (should be last)
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

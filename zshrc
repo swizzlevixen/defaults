@@ -1,7 +1,3 @@
-# ----------
-# This is from the Apple-provided /etc/zshrc
-# ----------
-
 # Correctly display UTF-8 with combining characters.
 if [ "$TERM_PROGRAM" = "Apple_Terminal" ]; then
 	setopt combiningchars
@@ -110,6 +106,6 @@ alias dev="cd ~/dev/"
 # export SOME_SECRET_PASSWORD="password123!"
 
 # Better directory lists, console, and top presets
-alias ll="ls -lahL"
+alias lla="ls -lahL"
 alias con="tail -40 -f /var/log/system.log"
 alias ttop="top -d -u -s 10"
