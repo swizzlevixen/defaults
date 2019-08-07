@@ -17,6 +17,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_HOME_ICON=🐇
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
