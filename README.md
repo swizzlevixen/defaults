@@ -88,4 +88,6 @@ brew install zsh-syntax-highlighting
 ### Other Python stuff
 
 - Python [`termcolor`](https://pypi.org/project/termcolor/) for printing colors to the terminal.
-- `pip3 install bpython` to install a Python REPL wrapper that adds definition pop-ups and syntax coloring
+- `pip3 install bpython` to install [`bpython`][], a Python REPL wrapper that adds definition pop-ups and syntax coloring
+
+[bpython]: https://bpython-interpreter.org/
