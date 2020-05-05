@@ -142,6 +142,14 @@ alias pshop="open -a 'Adobe Photoshop CC 2019'"
 # Make a directory and immediately change into it
 function mkdircd () { mkdir -p "$@" && cd "$@"; }
 
+# Environment variables
+# export SOME_SECRET_PASSWORD="password123!"
+
+# Better directory lists, console, and top presets
+alias ll="ls -lahL"
+alias ttail="tail -40 -f /var/log/system.log"
+alias ttop="top -d -u -s 10"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
