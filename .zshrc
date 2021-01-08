@@ -17,7 +17,9 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_HOME_ICON=🐇
+# POWERLEVEL9K_HOME_ICON=🐇
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs virtualenv newline)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,7 +79,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git git-open zsh-autosuggestions virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,12 +94,15 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="bbedit ~/.zshrc"
 alias ohmyzsh="bbedit ~/.oh-my-zsh"
 
+export LESS="-EFRSX"
+
 export PATH="/users/mboszko/Applications:${PATH}"
 
 # Python and Virtual Environment defaults
-export PYTHONVER=3.7
+export PYTHONVER=3.8
 export PYTHON=python${PYTHONVER}
 export PATH="/Library/Frameworks/Python.framework/Versions/${PYTHONVER}/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/${PYTHONVER}/lib/${PYTHON}/site-packages:${PATH}"
 export PROJECT_HOME="${HOME}/dev"
 export WORKON_HOME="${HOME}/.virtualenvs"
 export VIRTUALENVWRAPPER_TMPDIR="${WORKON_HOME}/tmp"
@@ -159,3 +164,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # iTerm integration (should be last)
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/mboszko/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
