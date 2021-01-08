@@ -94,6 +94,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="bbedit ~/.zshrc"
 alias ohmyzsh="bbedit ~/.oh-my-zsh"
 
+export COMPUTER_NAME="FireBook"
 
 export LESS="-EFRSX"
 
