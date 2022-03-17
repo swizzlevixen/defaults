@@ -44,9 +44,9 @@ Work in progress. See [my last list from 2010][2010apps] in the meantime, but be
 
 ## Fonts
 
-- [Dank Mono][dank] is now my preferred coding font. The beautiful letter forms and nice coding ligatures really make it. £24 for personal use. 
+- [Dank Mono][dank] is now my preferred coding font. The beautiful letter forms and nice coding ligatures really make it. £24 for personal use.
 - A free option is [DejaVu Sans Mono][dejavu] as a wider-glyph replacement for [Panic Sans][coda].
-    - [A copy of the DejaVu fonts][dejavufonts] are included in this repository under [their free license][dejavulicense].
+  - [A copy of the DejaVu fonts][dejavufonts] are included in this repository under [their free license][dejavulicense].
 - You'll also want a [Nerd Font][] patched font to show little icons in the terminal. Currently I'm using [MesloLGS NF][] for non-ascii characters in iTerm and VS Code, but I should probably just patch Dank Mono with the Font Patcher tool (at the bottom of the page)
 
 [dank]: https://dank.sh/
