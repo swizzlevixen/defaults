@@ -37,7 +37,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 #### [Powerlevel10k and patched font](https://gist.github.com/kevin-smets/8568070)
 
-```
+```zsh
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
@@ -46,7 +46,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 #### [Enable auto-suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
-```
+```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
@@ -56,7 +56,7 @@ By default, word jumps (option + → or ←) and word deletions (option + backsp
 
 #### Syntax Highlighting
 
-```
+```zsh
 brew install zsh-syntax-highlighting
 ```
 
@@ -70,8 +70,12 @@ brew install trash
 
 ### Adding to $PATH
 
-    PATH=$PATH:~/opt/bin  # New path at end
-    PATH=~/opt/bin:$PATH  # New path first
+Examples:
+
+```zsh
+PATH=$PATH:~/opt/bin  # New path at end
+PATH=~/opt/bin:$PATH  # New path first
+```
 
 ## Yoncé
 
@@ -79,7 +83,7 @@ I have made a fork of [Yoncé](https://github.com/swizzlevixen/yonce), “Queen 
 
 ## VS Code
 
-I need to make a segment about settings and layout for VS Code, but for now it's my primary editor. 
+I need to make a segment about settings and layout for VS Code, but for now it's my primary editor.
 
 ## Python
 
