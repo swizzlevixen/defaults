@@ -10,18 +10,23 @@ See the [Mac Essentials](https://github.com/bobtiki/defaults/blob/master/mac_ess
 
 ![customized zsh screenshot](media/zsh.png "customized zsh screenshot")
 
-Moving to `zsh` on all Macs from here forward, since macOS is moving to it as [the default in Catalina](https://support.apple.com/en-us/HT208050), and Omni prefers it anyway. I learned a lot from [this Scripting OS X article on moving to zsh](https://scriptingosx.com/2019/06/moving-to-zsh/).
+`zsh` is the default shell [since macOS Catalina](https://support.apple.com/en-us/HT208050). [These articles on Scripting OS X](https://scriptingosx.com/2019/06/moving-to-zsh/), by Armin Briegel, are a good primer on `zsh` and the changes from `bash`.
 
 - `zshrc` goes in `/etc/`, and is executed for all users
 - `.zshrc` goes in `~/`, and is for the current user only.
 
-[These articles on Scripting OS X](https://scriptingosx.com/2019/06/moving-to-zsh/), by Armin Briegel, are a good primer on `zsh` and the changes from `bash`.
+Adding to $PATH, examples:
 
-I am now using [oh-my-zsh](https://ohmyz.sh/), as their git plugin is very nice, and I *love* the Powerlevel10k theme.
+```zsh
+PATH=$PATH:~/opt/bin  # New path at end
+PATH=~/opt/bin:$PATH  # New path first
+```
 
-### Install these bits
+I am now using [oh-my-zsh](https://ohmyz.sh/), as their git plugin is very nice, and I *lurrrve* the Powerlevel10k theme.
 
-#### iTerm2
+Install these bits:
+
+### iTerm2
 
 ```sh
 brew cask install iterm2
@@ -29,13 +34,16 @@ brew cask install iterm2
 
 I have my colors set to "Yoncé" (see below). I have saved my iTerms profile `mboszko` here in the `.iterm` folder. Copy this folder to `~/.iterm` and set iTerm2 > Preferences > General > [√] Load prefererences from a custom folder or URL: ~/.iterm
 
-#### Oh-my-zsh
+### Oh-my-zsh
 
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-#### [Powerlevel10k and patched font](https://gist.github.com/kevin-smets/8568070)
+### Powerlevel10k and patched font
+
+- [Installation instructions](https://gist.github.com/kevin-smets/8568070) with a helpful section about [VS Code config](https://gist.github.com/kevin-smets/8568070#visual-studio-code-config)
+- [Powerlevel10k git repo](https://github.com/romkatv/powerlevel10k)
 
 ```zsh
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
@@ -44,37 +52,32 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 - Download the [MesloLSGS NF](https://github.com/romkatv/powerlevel10k#fonts) font and install.
 - Download the (not free, but if you're me, you have a license) [Dank Mono](https://philpl.gumroad.com/l/dank-mono) font and install.
 
-#### [Enable auto-suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+### Enable auto-suggestions
+
+- [`zsh-autosuggestions` git repo](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-#### Enable word jumps and word deletion, aka natural text selection
+### Enable word jumps and word deletion, aka natural text selection
 
 By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to **iTerm → Preferences → Profiles → Keys → Key Mappings → Presets... → Natural Text Editing → Boom! Head explodes**
 
-#### Syntax Highlighting
+### Syntax Highlighting
+
+- [`zsh-syntax-highlighting` git repo](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ```zsh
 brew install zsh-syntax-highlighting
 ```
 
-#### Trash
+### Trash
 
-Allows you to send a file to the trash instead of just `rm`-ing it.
+Trash ([git repo](https://github.com/ali-rantakari/trash)) allows you to send a file to the trash instead of just `rm`-ing it.
 
 ```zsh
 brew install trash
-```
-
-### Adding to $PATH
-
-Examples:
-
-```zsh
-PATH=$PATH:~/opt/bin  # New path at end
-PATH=~/opt/bin:$PATH  # New path first
 ```
 
 ## Yoncé
