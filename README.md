@@ -82,15 +82,15 @@ brew install trash
 
 ## Yoncé
 
-I have made a fork of [Yoncé](https://github.com/swizzlevixen/yonce), “Queen Bey-inspired themes for all your favs,” [originally by Mina Markham](https://yoncetheme.com/). I love the colors, and there are presets for iTerm (already included in my profile here), Slack, Alfred, VS Code, etc.
+I have made [a fork of Yoncé](https://github.com/swizzlevixen/yonce), “Queen Bey-inspired themes for all your favs,” based on the [original by Mina Markham](https://yoncetheme.com/). I love the colors, and there are presets for iTerm (already included in my profile here), Slack, Alfred, VS Code, etc.
 
 ## VS Code
 
-I need to make a segment about settings and layout for VS Code, but for now it's my primary editor.
+I need to make a segment about settings and layout for [Visual Studio Code](https://code.visualstudio.com), but for now it's my primary editor.
 
 ## Python
 
-### Venv installation and setup
+### Virtual environment tools setup
 
 - [Download the latest Python](https://www.python.org/downloads/mac-osx/) (3.10.2, as of this writing) and install
 - run `Update Shell Profile.command` and `Install Certificates.command`
