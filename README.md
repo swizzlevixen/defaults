@@ -60,6 +60,14 @@ By default, word jumps (option + → or ←) and word deletions (option + backsp
 brew install zsh-syntax-highlighting
 ```
 
+#### Trash
+
+Allows you to send a file to the trash instead of just `rm`-ing it.
+
+```zsh
+brew install trash
+```
+
 ### Adding to $PATH
 
     PATH=$PATH:~/opt/bin  # New path at end
