@@ -68,8 +68,18 @@ By default, word jumps (option + → or ←) and word deletions (option + backsp
 
 - [`zsh-syntax-highlighting` git repo](https://github.com/zsh-users/zsh-syntax-highlighting)
 
+> The zsh-syntax-highlighting authors recommend manual installation over the use of a framework or plugin manager.
+
+But I'm going to ignore [that recommendation](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-a-plugin-manager). Clone the repository in oh-my-zsh's plugins directory:
+
 ```zsh
-brew install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+Activate the plugin in `~/.zshrc`. It needs to be the last plugin listed:
+
+```zsh
+plugins=( [plugins...] zsh-syntax-highlighting)
 ```
 
 ### Trash
