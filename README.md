@@ -28,11 +28,26 @@ Install these bits:
 
 ### iTerm2
 
-```sh
-brew cask install iterm2
-```
+Download the latest version of the app [from here](https://iterm2.com/downloads/stable/latest), or go to the [iTerm2 Website](https://iterm2.com).
 
-I have my colors set to "Yoncé" (see below). I have saved my iTerms profile `mboszko` here in the `.iterm` folder. Copy this folder to `~/.iterm` and set iTerm2 > Preferences > General > [√] Load prefererences from a custom folder or URL: ~/.iterm
+#### Fonts
+
+Download these fonts before importing the settings, so the fonts in the settings are already there. Otherwise, it'll default to a different font when you import, and you'll have to set them again later:
+
+- Download the [MesloLSGS NF](https://github.com/romkatv/powerlevel10k#fonts) font and install.
+- Download the (not free) [Dank Mono](https://philpl.gumroad.com/l/dank-mono) font and install. If licensed, it should be in [your Gumroad library](https://app.gumroad.com/library).
+
+#### Import iTerm settings
+
+Go to **iTerm2 ▶︎ Preferences ▶︎ Profiles ▶︎ Other Actions… ▶︎ Import JSON Profiles…** and select and open  `mboszko-term.json` from this repo. Select the new `mboszko` profile and click **Other Actions… ▶︎ Set as Default**, and then you can delete the old default profile.
+
+#### Yoncé Colors
+
+I already have the Yoncé colors (see below) as part of my profile, but you can also get them from the [Yoncé repo](https://github.com/swizzlevixen/yonce)
+
+#### Enable natural text selection
+
+By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to **iTerm ▶︎ Preferences ▶︎ Profiles ▶︎ Keys ▶︎ Key Mappings ▶︎ Presets... ▶︎ Natural Text Editing** ▶︎ Boom! Head explodes! (I do have this set in the profile linked above.)
 
 ### Oh-my-zsh
 
@@ -40,17 +55,18 @@ I have my colors set to "Yoncé" (see below). I have saved my iTerms profile `mb
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Powerlevel10k and patched font
+### Powerlevel10k theme
 
 - [Installation instructions](https://gist.github.com/kevin-smets/8568070) with a helpful section about [VS Code config](https://gist.github.com/kevin-smets/8568070#visual-studio-code-config)
 - [Powerlevel10k git repo](https://github.com/romkatv/powerlevel10k)
 
+Clone the repository:
+
 ```zsh
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-- Download the [MesloLSGS NF](https://github.com/romkatv/powerlevel10k#fonts) font and install.
-- Download the (not free, but if you're me, you have a license) [Dank Mono](https://philpl.gumroad.com/l/dank-mono) font and install.
+If you're not going to use this repo's `.zshrc`, set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
 
 ### Enable auto-suggestions
 
@@ -60,9 +76,14 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-### Enable word jumps and word deletion, aka natural text selection
+If you're not going to use this repo's `.zshrc`, add the plugin to `~/.zshrc`:
 
-By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to **iTerm → Preferences → Profiles → Keys → Key Mappings → Presets... → Natural Text Editing → Boom! Head explodes**
+```zsh
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+```
 
 ### Syntax Highlighting
 
@@ -76,19 +97,22 @@ But I'm going to ignore [that recommendation](https://github.com/zsh-users/zsh-s
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-Activate the plugin in `~/.zshrc`. It needs to be the last plugin listed:
+If you're not going to use this repo's `.zshrc`, add the plugin to `~/.zshrc`. It needs to be the last plugin listed:
 
 ```zsh
-plugins=( [plugins...] zsh-syntax-highlighting)
+plugins=( 
+    # other plugins...
+    zsh-syntax-highlighting
+)
 ```
 
-### Trash
+### tools-osx, Trash
 
-Trash ([git repo](https://github.com/ali-rantakari/trash)) allows you to send a file to the trash instead of just `rm`-ing it.
+Maybe install [these macOS specific tools](https://github.com/morgant/tools-osx). The [Trash](https://github.com/morgant/tools-osx#trash) one is especially handy.
 
-```zsh
-brew install trash
-```
+### .zshrc
+
+At this point, copy `.zshrc` and `.p10k.zsh` from this repo into your `~/` user directory, and then open a new iTerm window. If you set the iTerm fonts properly at the beginning, you should be all set.
 
 ## Yoncé
 
