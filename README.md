@@ -138,9 +138,11 @@ I need to make a segment about settings and layout for [Visual Studio Code](http
 
 - `pip3 install blessings` for Python [`blessings`](https://github.com/erikrose/blessings) for printing colors and other formatting to the terminal.
 - `pip3 install bpython` to install [`bpython`](https://bpython-interpreter.org/), a Python REPL wrapper that adds definition pop-ups and syntax coloring
- 
- ### Keyboard
 
- I just got the Microsoft Sculpt Ergonomic Desktop (L5V-00001), and I'm trying it out, so I guess we'll see if it sticks. But if you *are* using it, here's how to makie it more comfortable with macOS:
+## Hardware
+
+### Keyboard
+
+I just got the Microsoft Sculpt Ergonomic Desktop (L5V-00001), and I'm trying it out, so I guess we'll see if it sticks. But if you *are* using it, here's how to makie it more comfortable with macOS:
 
 - Install [Karabiner-Elements](https://karabiner-elements.pqrs.org), and import the [macOS friendlly customizations](https://ke-complex-modifications.pqrs.org/#microsoft_sculpt_ergonomic_desktop) for the keyboard.
