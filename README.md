@@ -126,6 +126,8 @@ I need to make a segment about settings and layout for [Visual Studio Code](http
 
 ### Virtual environment tools setup
 
+> TODO: I think I'm moving to `pipenv` for all of my environment stuff, so this needs to be updated
+
 - [Download the latest Python](https://www.python.org/downloads/mac-osx/) (3.10.2, as of this writing) and install
 - run `Update Shell Profile.command` and `Install Certificates.command`
 - Use [`virtualenv`](https://pypi.org/project/virtualenv/) and [`virtualenvwrapper`](https://pypi.org/project/virtualenvwrapper/) for **every project**
