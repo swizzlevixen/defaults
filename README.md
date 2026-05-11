@@ -141,6 +141,14 @@ I need to make a segment about settings and layout for [Visual Studio Code](http
 - `pip3 install blessings` for Python [`blessings`](https://github.com/erikrose/blessings) for printing colors and other formatting to the terminal.
 - `pip3 install bpython` to install [`bpython`](https://bpython-interpreter.org/), a Python REPL wrapper that adds definition pop-ups and syntax coloring
 
+## Claude
+
+I keep my Claude skills in an iCloud Drive folder. On a new machine, symlink the personal skills folder to iCloud Drive so that the skills sync.
+
+```
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Claude/skills ~/.claude/skills
+```
+
 ## Hardware
 
 ### Keyboard
