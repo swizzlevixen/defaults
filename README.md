@@ -143,6 +143,12 @@ I need to make a segment about settings and layout for [Visual Studio Code](http
 
 ## Claude
 
+Installing the latest:
+
+```
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
 I keep my Claude skills in an iCloud Drive folder. On a new machine, symlink the personal skills folder to iCloud Drive so that the skills sync.
 
 ```
