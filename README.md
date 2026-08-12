@@ -122,6 +122,16 @@ I have made [a fork of Yoncé](https://github.com/swizzlevixen/yonce), “Queen 
 
 I need to make a segment about settings and layout for [Visual Studio Code](https://code.visualstudio.com), but for now it's my primary editor.
 
+## MacDown 3000
+
+Free Markdown editor, mostly replaces IA Writer for my current purposes, and provides a nice preview. Install:
+
+```
+brew install --cask macdown-3000
+```
+
+You can install the `macdown` terminal utility from the app settings.
+
 ## Python
 
 ### Virtual environment tools setup
