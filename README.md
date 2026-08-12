@@ -124,7 +124,9 @@ I need to make a segment about settings and layout for [Visual Studio Code](http
 
 ## MacDown 3000
 
-Free Markdown editor, mostly replaces IA Writer for my current purposes, and provides a nice preview. Install:
+https://github.com/schuyler/macdown3000
+
+Free Markdown editor, mostly replaces [iA Writer](https://ia.net/writer) for my current purposes, and provides a nice preview. Install:
 
 ```
 brew install --cask macdown-3000
